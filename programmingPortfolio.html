@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Services</title>
+		<title>Programming Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -44,27 +44,30 @@
 							<section id="one">
 								<div class="inner">
 									<header class="major">
-										<h1>Services</h1>
+										<h1> The Art of Steganography </h1>
 									</header>
-                                    <span class="image main"><img src="images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg" alt="computer" /></span>
-                                    <ul>
-                                        <li> Responsive Design  </li>
-                                        <li> HTML5 Website Development  </li>
-                                        <li> Mobile-Optimized Website  </li>
-                                        <li> Printer-Friendly Website  </li>
-                                        <li> Web Application  </li>
-                                        <li> Mobile Application / iPhone App  </li>
-                                        <li> Content Management  </li>
-                                        <li> Event Booking  </li>
-                                        <li> Event Calendar  </li>
-                                        <li> Blog / News Management  </li>
-                                        <li> Business Directory / Listings  </li>
-                                        <li> Booking / Reservations / Availability System  </li>
-                                        <li> Social Media Integration — Facebook, Twitter, Youtube, Google+, etc.  </li>
-                                        <li> Email Newsletter  </li>
-                                        <li> + Development with Wix</li>  
-                                    
-                                    </ul>
+                                    <span class="image main"><img src="images/taskin-ashiq-_X-f0s20tcM-unsplash.jpg" alt="red keys" /></span>
+                                        <p> Cryptopgraphy is the art of writing or solving codes. 
+                                            Steganography is the art of hiding one type of information inside another. 
+                                            I developed a Secure Cryptography Program using C++ to encode/decode plain text into larger .txt file and alter capitalization of larger message to encrypt payload. </p>
+                                            
+                                             <p> Kerckhoffs's principle and Shannon's maxim states that 
+                                             "one ought to design systems under the assumption that the enemy will immediately gain full familiarity with them."  When designing secure encryption the advantages of maintaining secret keys prevents "the enemy to know the system."</p>
+                                            
+                                            <p> This program hides one plain text file in the other, the payload alters the capitalization of the larger text. In turn, the message splits into blocks of 8 alphabetic characters, each block contains a single hidden character from the payload. </p>
+                                            
+                                            <p> For each function in the program, there is a test function to ensure proper functionality of each component. The program is structured by first encoding a single character. This is written as <br>
+                                            
+                                             "std::string encode_char(std::stringblock, char payload){}" </p>
+                                            
+                                            <p> The function encode_char takes a string 'block' and a single character 'payload' as parameters. The algorithm defined in this function iterates over the length of the block, "block.size(); " to alter the capatilization of each character in the string, using  "std::isalpha() , std::toupper(), std::tolower()" in a recursive for loop until the function has met the initial condition. </p>
+                                            
+                                            <p> The function decode_char uses the opposite logic however sets the remaining bit of the the block to one to indicate whether the character is upper case or lower case. </p>
+                                            
+                                            <p> Encoding the string uses similar logic to encoding a single character like " encode_char()" The key difference in the functionality of "std::string encode_string(std::sting message, std::string payload) {} " is that this function definition must 'find the boundary of the string" and append a null terminator from encode_char() to further encode the string according to the boundary of the message that needs to be encoded. </p>
+                                        
+                                            <p> According to User-Centric Privacy and Security in Biometrics, steganography provides inter-protection for privacy and even proposes a double layer secret sharing system to further encrypt data in text files and digital images. 
+                                        (Vielhauer, Claus '18). </p>
 								</div>
 							</section>
 
