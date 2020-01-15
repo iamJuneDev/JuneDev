@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Services</title>
+		<title>React Scripting</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -44,27 +44,16 @@
 							<section id="one">
 								<div class="inner">
 									<header class="major">
-										<h1>Services</h1>
+										<h1> React Scripts </h1>
 									</header>
-                                    <span class="image main"><img src="images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg" alt="computer" /></span>
-                                    <ul>
-                                        <li> Responsive Design  </li>
-                                        <li> HTML5 Website Development  </li>
-                                        <li> Mobile-Optimized Website  </li>
-                                        <li> Printer-Friendly Website  </li>
-                                        <li> Web Application  </li>
-                                        <li> Mobile Application / iPhone App  </li>
-                                        <li> Content Management  </li>
-                                        <li> Event Booking  </li>
-                                        <li> Event Calendar  </li>
-                                        <li> Blog / News Management  </li>
-                                        <li> Business Directory / Listings  </li>
-                                        <li> Booking / Reservations / Availability System  </li>
-                                        <li> Social Media Integration — Facebook, Twitter, Youtube, Google+, etc.  </li>
-                                        <li> Email Newsletter  </li>
-                                        <li> + Development with Wix</li>  
-                                    
-                                    </ul>
+                                    <span class="image main"><img src="images/reactscript.jpeg" alt="react" /></span>
+                                    <h1>Organizing File Structure</h1>
+                                    <p>There are many challenges in the aspect of maintenance and debugging in web development. This is largely in part due to the file structure of the React project. Since routing is a major feature of developing with React, I would organize my folders according in a way that my features and components and be easily accessed (in any case that code revision would take place). The common practice is organizing files by type, which becomes difficult to maintain when scaled. In the article by Juvo V. “How to Structure React Project” he proposes that project file structure should be organized completely in one folder, creating root level directories. The issue with the 1 file approach is that as the project evolves, certain directories become redundant since routing takes effect, while features are added between scenes with disregard for their specifications.</p>
+                                    <h1>The “Better” Way to Organize React Apps</h1>
+                                    <p>On the other hand, A. Margin writes a better way to organize Reacts app in his article “How to better organize a React App.” Margin addresses the challenges when maintaining specific features and components from a functional standpoint, keeping the React-Routing rules in mind. This approach seems more practical to me because it organizes related features together, and each component is organized to include all files it needs to work. I find this approach better because if I want to delete a scene, or a button, I can easily access the component and manage it without having severe implications to the code flow of my directories. Given I follow the four rules Margin outlines, I believe I can effectively develop an app that easily sorts out all features and scenes accessibly. These four rules are Margin gives 1) Component can define nested components but cannot define scenes. 2) A scene can define nested components. 3) A service can define nested services but cannot define a component or scene. 4) Nested features can only be used by parent.</p>
+                                    <h1>A Note on Webpack Configuration</h1>
+                                    <p>An article published on Smashing Magazine by Joseph Zimmerman overviews a detailed introduction to Webpack. The essential data communicated in this article explains the functionality of a Webpack in comparison to its’ competitors or Module Bundlers. Webpacks are necessary because it obtain critical dependencies needed for the apps to run. This is done in two ways, either by asynchronously loading and running the modules, or by combining all necessary files into one Javascript file that would be loaded in the "script" tag of HTML. This plugin facilitates file configuration.</p>
+
 								</div>
 							</section>
 
@@ -141,14 +130,15 @@
 
 			</div>
 
+		
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
 
 	</body>
 </html>
